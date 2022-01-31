@@ -188,4 +188,47 @@ li {
 #about .text p {
   line-height: 2.2;
 }
+
+#business {
+  margin-bottom: 120px;
+}
+
+#business .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+#business .flex .left {
+  width: 46%;
+  margin-top: 100px;
+}
+
+#business .flex .right {
+  width: 46%;
+}
+
+#business .flex .item {
+  margin-bottom: 50px;
+}
+
+#business .flex .title {
+  font-weight: bold;
+  margin: 0 0 10px 18px;
+  position: relative;
+}
+
+#business .flex .title::before {
+  content: "";
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -18px;
+}
 /*# sourceMappingURL=style.css.map */

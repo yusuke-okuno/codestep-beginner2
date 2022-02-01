@@ -298,4 +298,30 @@ li {
 #company .info .add {
   margin-left: 20%;
 }
+
+.footer {
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.footer .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footer .flex .logo {
+  margin-right: 0;
+}
+
+.footer .copyright {
+  font-size: 0.625rem;
+}
 /*# sourceMappingURL=style.css.map */

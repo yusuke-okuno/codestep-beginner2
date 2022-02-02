@@ -252,3 +252,130 @@ li {
     font-size: 0.625rem;
   }
 }
+
+// 以下、レスポンシブ
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 80px;
+    margin: 8px 0;
+  }
+  .section-title {
+    margin-bottom: 34px;
+  }
+  .section-title .japanese {
+    margin-bottom: 24px;
+  }
+
+  .header {
+    .headerleft {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .contact {
+      display: none;
+    }
+  }
+
+  #mainvisual {
+    margin-bottom: 80px;
+  }
+
+  #news {
+    margin-bottom: 80px;
+    .list {
+      flex-direction: column;
+      li {
+        // width: 100%;
+        border-right: none;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #about {
+    flex-direction: column;
+    margin-bottom: 80px;
+    .img {
+      width: 100%;
+      margin-bottom: 30px;
+      img {
+        height: 300px;
+      }
+    }
+    .text {
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+  
+  #business {
+    margin-bottom: 80px;
+    .flex {
+      flex-direction: column;
+      padding: 0;
+      .left {
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+      .right {
+        width: 100%;
+      }
+      .item {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .title {
+        text-align: left;
+      }
+    }
+  }
+
+  #company {
+    height: auto;
+    flex-direction: column;
+    position: static;
+    .text {
+      width: 100%;
+      padding: 40px 20px;
+      margin-bottom: 20px;
+      position: static;
+    }
+    .img {
+      width: 100%;
+      padding: 0;
+      position: static;
+    }
+    .info {
+      flex-direction: column;
+      dt {
+        width: 100%;
+        margin-top: 20px;
+      }
+      dd {
+        width: 100%;
+        margin-top: 5px;
+        padding-left: 14px;
+      }
+      dd:first-of-type {
+        margin-top: 5px;
+      }
+      .add {
+        margin-left: 0;
+      }
+      // このadd部分により全体が左に行くのではなく、レスポンシブではない場合にmargin-left: 20%;が当たっているので、これで上書きすることにより全体が左に行く（margin-left: 20%;により全体が右に行ってしまっている）
+    }
+  }
+
+  .footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+}
